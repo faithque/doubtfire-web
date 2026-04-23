@@ -313,6 +313,7 @@
         <i class="fa fa-book"></i>
         <p>No Portfolio Submitted</p>
       </div>
+<<<<<<< HEAD
       <div class="panel-body flex flex-col h-screen" ng-if="project.portfolioAvailable">
         <f-pdf-viewer
           class="flex flex-grow"
@@ -320,6 +321,9 @@
         >
         </f-pdf-viewer>
       </div>
+=======
+      <pdf-viewer-panel ng-if="activeTab == tabs.viewPortfolio && project.portfolioAvailable" [pdf-url]="project.portfolioUrl()"></pdf-viewer-panel>
+>>>>>>> c51d4b26 (feat: add performance bands)
     </div>
 
     <div class="panel panel-primary" ng-show="activeTab == tabs.assessPortfolio">
